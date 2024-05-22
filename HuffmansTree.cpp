@@ -53,6 +53,10 @@ int main() {
     // Ordenar o vetor pela frequência (menor para maior)
     sort(vetor.begin(), vetor.end(), compareNodes);
 
+
+
+
+
     // Exibir o vetor na ordem inversa (do fim para o início), ignorando caracteres vazios
     for (auto it = vetor.rbegin(); it != vetor.rend(); ++it) {
         node n = *it;
@@ -60,6 +64,7 @@ int main() {
             wcout << L"Caractere: " << n.chave << L" Frequência: " << n.freq << endl;
         }
     }
+
 
     return 0;
 }
